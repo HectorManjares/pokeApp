@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    text-align: center
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(4px 6px 12px black);
+}
+
+body{
+    font-family: 'Russo One', sans-serif;
+}
+
+.All{
+    background-image: url(./assets/images/wallpaper.png);
+    background-repeat: repeat-y;
+    padding: 2rem;
+    
+}
+
+.Infomation{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.Card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.CardInfo{
+    width: 300px;
+}
+
+.cardPokeInfo{
+    border-radius: 223px 0;
+    padding: 1rem;
+}
+
+.cardCont{
+    text-align: start;
+    text-transform: capitalize;
+
+}
+
+li{
+    list-style: none;
+}
+
+.Stat{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.Name{
+    text-align: center;
+    margin: 5px;
+    text-transform: capitalize;
+    text-align: end;
+}
+
+.Type{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.typePoke{
+    text-transform: capitalize;
+    text-align: start;
+    margin-left: 2rem;
+    
+}
+
+.statInfo{
+    position: relative;
+}
+
+.CardContent{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.Search{
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    outline: none;
+}
+
+.searchBtn{
+    position: absolute;
+    border: none;
+    font-weight: bold;
+    top: 6.5%;
+    left: 29%;
+    width: 56px;
+    height: 30px;
+    background: #666866;
+    border-radius: 0 100px 100px 0;
+    font-size: 18px;
+    padding: 6px
+}
+
+.inputUser{
+    position: absolute;
+    top: 70%;
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+    padding: 0.5rem;
+    left: 6%;
+    outline: none;
+}
+
+.inputButton{
+    position: absolute;
+    border: none;
+    background: none;
+    font-weight: bold;
+    top: 70%;
+    left: 29%;
+    width: 54px;
+    height: 40px;
+    background: #666866;
+    border-radius: 0 100px 100px 0;
+
+}
+
+.inputButton:hover{
+    filter: invert(100%);
+}
+
+.type{
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(to bottom right, white, rgb(30, 30, 221));
+    border-radius: 140px 80px 0 0;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+.BtnPages{
+    border: none;
+    font-weight: bold;
+    width: 54px;
+    height: 40px;
+    background: #666866;
+    border-radius: 100px 0 0 100px;
+    margin-right: 1rem;
+    color: black;
+}
+
+.BtnPages1{
+    border: none;
+    font-weight: bold;
+    width: 54px;
+    height: 40px;
+    background: #666866;
+    border-radius: 0 100px 100px 0;
+    margin-left: 1rem;
+    color: black;
+    margin-top: 15px;
+}
+
+.contDetail{
+
+    position: absolute;
+    top: 15px;
+    width: 100%;
+}
+
+.Poke{
+   width: 27%;
+   position: relative;
+   right: 5%;
+   bottom: -5px;
+   animation: rebote 2s linear infinite;
+}
+
+@keyframes rebote{
+    0%{
+        top: -5px;
+    }
+    50%{
+        top: 5px;
+    }
+    100%{
+        top: -5px;
+    }
+}
+
+.nameId{
+ text-transform: capitalize;
+ position: relative;
+    right: 4%;
+    font-size: 50px;
+}
+
+.idInfo{
+    position: relative;
+    right: 4%;
+    font-size: 35px;
+}
+
+.BtnPrev{
+    position: relative;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(46, 46, 46);
+    font-size: 30px;
+    left: 45%;
+}
+
+.InfoAll{
+    position: relative;
+    right: -4%;
+    bottom: 292px;
+    display: flex;
+    font-size: 22px;
+}
+
+.TypeINfo{
+margin: 1rem;
+}
+
+.TypeInfoT{
+    text-transform: capitalize;
+    margin: 0.5rem;
+}
+
+.TypeInfoAbili{
+    margin: 1rem;
+}
+
+.TypeInfoA{
+    text-transform: capitalize;
+    margin: 0.5rem;
+}
+
+.StatsPoke{
+    margin: 1rem;
+}
+
+.StatsPokeAll{
+    text-transform: capitalize;
+    margin: 0.5rem;
+}
+
+.Info{
+    gap: 1rem;
+    font-size: 22px;
+    justify-content: center;
+    position: relative;
+    top: 85px;
+    right: 80px;
+}
+
+.SelectMoves{
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(to bottom right, white, rgb(30, 30, 221));
+    border-radius: 140px 80px 0 0;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    bottom: 320px;
+    right: 180px;
+}
